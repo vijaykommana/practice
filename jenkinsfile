@@ -12,11 +12,5 @@ pipeline{
                 sh "docker build image -t myspc:1.2 ."
             }
         }
-        stage('log and push'){
-            steps {
-                
-            }
-        }
-          
     }
 }

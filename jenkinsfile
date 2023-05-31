@@ -9,7 +9,7 @@ pipeline{
         }
         stage('build'){
             steps{
-                sh "docker image build image -t myspc:1.2 ."
+                 sh 'docker image build -t spc:1.0 .'
             }
         }
     }

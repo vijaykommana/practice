@@ -7,7 +7,7 @@ pipeline{
                 branch : 'main'
             }
         }
-        stage ('build'{
+        stage ('build'){
             steps{
                 sh "mvn compile"
             }
@@ -25,8 +25,8 @@ pipeline{
         }
         stage('push'){
             steps{
-                sh "docker image tag spc:1.2 869388788941.dkr.ecr.us-west-2.amazonaws.com/vijay:2.0",
-                sh "docker image push 869388788941.dkr.ecr.us-west-2.amazonaws.com/vijay:2.0"
+                sh "docker image tag spc:1.2 869388788941.dkr.ecr.us-west-2.amazonaws.com/vijay:2.0"
+               
             }
         }
       
